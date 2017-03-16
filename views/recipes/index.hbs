@@ -1,0 +1,13 @@
+<h1>Your Recipes</h1>
+
+<ul>
+    {{#each recipes}}
+        <li>
+            <h2><a href="/recipes/{{@index}}">{{title}}</a></h2>
+            <img src="{{imageUrl}}" alt="{{title}}"><br />
+            Veggie: {{veggie}}
+        </li>
+    {{/each}}
+</ul>
+
+<a class="btn btn-default" href="/recipes/new">Add a New Recipes</a>
